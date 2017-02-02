@@ -27,8 +27,8 @@ if($status==false){
         //      DBからとってきたデータを配列/オブジェクトの形にすることでjavascript等で扱いやすくなる
         $view .= '<tr>';
         $view .= '<td>'.$res['isbn13'].'</td>';
-        $view .= '<td>'.$res['book_name'].'</td>';
-        $view .= '<td>'.$res['author'].'</td>';
+        $view .= '<td>'.$res['title'].'</td>';
+        $view .= '<td>'.$res['authors'].'</td>';
         $view .= '<td>'.$res['jannru'].'</td>';
         $view .= '<td>'.$res['hyouka'].'</td>';
         $view .= '<td>'.$res['comment'].'</td>';
@@ -46,7 +46,7 @@ if($status==false){
     $cnt_lnov = 'SELECT COUNT(*) FROM gs_bm_table as bm WHERE bm.jannru="ラノベ"';
     $cnt_mc = 'SELECT COUNT(*) FROM gs_bm_table as bm WHERE bm.jannru="男性コミック"';
     $cnt_fc = 'SELECT COUNT(*) FROM gs_bm_table as bm WHERE bm.jannru="女性コミック"';
-    $cnt_ad = 'SELECT COUNT(*) FROM gs_bm_table as bm WHERE bm.jannru="アダルト（男性向け）"';
+    $cnt_ad = 'SELECT COUNT(*) FROM gs_bm_table as bm WHERE bm.jannru="アダルト"';
     $cnt_bl = 'SELECT COUNT(*) FROM gs_bm_table as bm WHERE bm.jannru="BL"';
 
     $rows_all = $pdo->query($cnt_all)->fetchColumn();
@@ -88,7 +88,7 @@ if($status==false){
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.js"></script>
     <link rel="stylesheet" href="css/style_select.css">
-    <style>div{padding: 10px;font-size:16px;}</style>
+<!--    <style>div{padding: 10px;font-size:16px;}</style>-->
     
     <script>
         

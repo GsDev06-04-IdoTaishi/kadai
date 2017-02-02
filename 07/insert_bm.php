@@ -1,10 +1,10 @@
 <?php
 //1. POSTデータ取得
 
-$name     = $_POST['name'];
 $isbn13     = $_POST['isbn13'];
-$book_name    = $_POST['book_name'];
-$author    = $_POST['author'];
+$title    = $_POST['title'];
+//$img      = $_POST['book_img'];
+//$authors    = $_POST['authors'];
 $jannru    = $_POST['jannru'];
 $hyouka   = $_POST['hyouka'];
 $comment   = $_POST['comment'];
@@ -19,12 +19,11 @@ try {
 
 
 //3．データ登録SQL作成
-$stmt = $pdo->prepare("INSERT INTO gs_bm_table(id, name, isbn13, book_name, author, jannru, hyouka, comment,
-indate )VALUES(NULL, :name, :isbn13, :book_name, :author, :jannru, :hyouka, :comment, sysdate())");
-$stmt->bindValue(':name', $name, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
+$stmt = $pdo->prepare("INSERT INTO gs_bm_table(id, isbn13, title, jannru, hyouka, comment,
+indate )VALUES(NULL, :isbn13, :title, :jannru, :hyouka, :comment, sysdate())");
 $stmt->bindValue(':isbn13', $isbn13, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
-$stmt->bindValue(':book_name', $book_name, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
-$stmt->bindValue(':author', $author, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
+$stmt->bindValue(':title', $title, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
+//$stmt->bindValue(':authors', $authors, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue(':jannru', $jannru, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue(':hyouka', $hyouka, PDO::PARAM_INT);  //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue(':comment', $comment, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
