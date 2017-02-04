@@ -87,45 +87,11 @@ if($status==false){
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.js"></script>
+<!--    <link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_select.css">
 <!--    <style>div{padding: 10px;font-size:16px;}</style>-->
     
-    <script>
-        
-        $(function(){
-            var cnt_array = <?php echo json_encode($cnt_array, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT);?>;
-    //        console.log(cnt_array);
-
-            var ctx = document.getElementById('myChart').getContext('2d');
-            var myChart = new Chart(ctx,{
-                type: 'pie',
-                data: {
-                    labels: ["ミステリ", "時代", "SF", "ノンフィク", "ラノベ", "漫画（男）", "漫画（女）","アダルト","BL"],
-                    datasets: [{
-                        backgroundColor: [
-                            "#1abc9c",
-                            "#f1c40f",
-                            "#2ecc71",
-                            "#e67e22",
-                            "#3498db",
-                            "#e74c3c",
-                            "#9b59b6",
-                            "#9b59b6",
-                            "#34495e",
-                        ],
-                        data: cnt_array
-                    }]
-                },
-                options:{
-                    animation:false,
-                    legend: {
-                        display: false
-                    }
-                }
-            });
-        });
-        
-    </script>
 </head>
 
 <body id="main">
@@ -219,6 +185,40 @@ if($status==false){
     </div>
 </div>
 <!-- Main[End] -->
+    <script>
+        
+        var cnt_array = <?php echo json_encode($cnt_array, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT);?>;
+//        console.log(cnt_array);
+
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx,{
+            type: 'pie',
+            data: {
+                labels: ["ミステリ", "時代", "SF", "ノンフィク", "ラノベ", "漫画（男）", "漫画（女）","アダルト","BL"],
+                datasets: [{
+                    backgroundColor: [
+                        "#1abc9c",
+                        "#f1c40f",
+                        "#2ecc71",
+                        "#e67e22",
+                        "#3498db",
+                        "#e74c3c",
+                        "#9b59b6",
+                        "#9b59b6",
+                        "#34495e",
+                    ],
+                    data: cnt_array
+                }]
+            },
+            options:{
+                animation:false,
+                legend: {
+                    display: false
+                }
+            }
+        });
+        
+    </script>
 
 </body>
 </html>

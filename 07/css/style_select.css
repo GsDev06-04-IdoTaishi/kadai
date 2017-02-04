@@ -1,25 +1,9 @@
-/*フォントの指定（どっかのサイトのコピペ）*/
-body{
-    
-    font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
-    background-color: beige;
-}
-
-
-
 header{
     padding-bottom: 3%;
 }
 
 .status{
     margin: 2% 2% 0 2%;
-}
-
-.title1{
-    text-align: center;
-    border: solid 1px #363636;
-/*    margin-bottom: 5px;*/
-    
 }
 
 .chart_area{

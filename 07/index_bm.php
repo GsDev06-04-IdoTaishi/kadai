@@ -7,7 +7,10 @@
     <script type="text/javascript" src="js/jquery.raty.js"></script>
     <script type="text/javascript" src="js/qrcodelib.js"></script>
     <script type="text/javascript" src="js/webcodecamjs.js"></script>
+<!--    <link rel="stylesheet" href="css/reset.css">-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_index.css">
     
 <!--    <style>div{padding: 10px;font-size:16px;}</style>-->
     
@@ -24,81 +27,90 @@
 <!-- Main[Start] -->
 <main>
     
+    
     <form method="post" action="insert_bm.php" onSubmit="return check()">
-       <br>
-       <br>
-       <br>
-       <br>
-       <br>
-        <div class="left_box">
-            <div>-SERCH-</div>
-            <div class="spacing">
-                <div class="flex_wrapper">
-                    <div>
+        <div class="contents">
+            <div class="left_box">
+                <div class="title1">-SERCH-</div>
+                <div class="spacing">
+                        <div>
+                            <br>ISBN
+                            <br>
+                            <input type="text" id="isbn">
+                            <br>
+                            <br>
+                            <button type="button" id="search_btn">Search</button>
+                        </div>
+                        <div>
+                            <br>
+                            <input id="switch" type="checkbox"> Barcode Reader
+                            <br>
+                            <canvas style="border: dashed 1px; width: 260px; height: 70px;"></canvas>
+                        </div>
+                </div>
+                <br>
+                <div class="spacing">
+                    <div class="flex_wrapper">
+                        <div style="width:70%;">Title:
+                            <br>
+                            <br>
+                            <span id="title"></span>
+                            <br>
+                            <br>
+                            <br> Authors:
+                            <br>
+                            <br>
+                            <span id="authors"></span>
+                        </div>
                         <br>
-                        <br>ISBN
-                        <br>
-                        <input type="text" id="isbn">
-                        <br>
-                        <br>
-                        <button type="button" id="search_btn">Search</button>
-                    </div>
-                    <div>
-                        <br>
-                        <input id="switch" type="checkbox"> Barcode Reader
-                        <br>
-                        <canvas style="border: dashed 1px; width: 260px; height: 70px;"></canvas>
+                        <div style="width: 30%;">
+                            <img id="book_img" style="width:auto; height:200px;">
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="spacing">
-                <div class="flex_wrapper">
-                    <div style="width:70%;">Title:
-                        <br>
-                        <br>
-                        <span id="title"></span>
-                        <br>
-                        <br>
-                        <br> Authors:
-                        <br>
-                        <br>
-                        <span id="authors"></span>
-                    </div>
-                    <br>
-                    <div style="width: 30%;">
-                        <img id="book_img" style="width:auto; height:200px;">
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="right_box">
-              <div class="jumbotron">
-               <fieldset>
-                <legend>INPUT</legend>
-<!--
-                 <label>名前：<input type="text" name="name"></label><br>
-                 <label>ISBNコード：<input type="text" name="isbn13"></label><br>
-                 <label>書名：<input type="text" name="book_name"></label><br>
-                 <label>著者名：<input type="text" name="author"></label><br>
--->
-                   <label>ジャンル：<select name="jannru">
-                       <option value="ミステリ小説">ミステリ小説</option>
-                       <option value="時代小説">時代小説</option>
-                       <option value="SF小説">SF小説</option>
-                       <option value="ノンフィクション">ノンフィクション</option>
-                       <option value="ラノベ">ラノベ</option>
-                       <option value="男性コミック">男性コミック</option>
-                       <option value="女性コミック">女性コミック</option>
-                       <option value="アダルト">アダルト</option>
-                       <option value="BL">BL</option>
-                   </select></label><br>
-                 <label>評価：<input type="range" name="hyouka" max="5" min="0" step="1" id="hyouka"><div id="hyouka_val">3</div></label><br>
-                 <label><textArea name="comment" rows="4" cols="40"></textArea></label><br>
-                 <input type="submit" value="登録">
-                </fieldset>
-              </div>
+            <div class="right_box">
+<!--                  <div class="jumbotron">-->
+<!--                   <fieldset>-->
+                    <div class="title1">-INPUT-</div>
+                    <br>
+    <!--
+                     <label>名前：<input type="text" name="name"></label><br>
+                     <label>ISBNコード：<input type="text" name="isbn13"></label><br>
+                     <label>書名：<input type="text" name="book_name"></label><br>
+                     <label>著者名：<input type="text" name="author"></label><br>
+    -->
+                    <label>ジャンル:
+                        <select name="jannru">
+                            <option value="ミステリ小説">ミステリ小説</option>
+                            <option value="時代小説">時代小説</option>
+                            <option value="SF小説">SF小説</option>
+                            <option value="ノンフィクション">ノンフィクション</option>
+                            <option value="ラノベ">ラノベ</option>
+                            <option value="男性コミック">男性コミック</option>
+                            <option value="女性コミック">女性コミック</option>
+                            <option value="アダルト">アダルト</option>
+                            <option value="BL">BL</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <label>評価:
+                        <input type="range" name="hyouka" max="5" min="0" step="1" id="hyouka"><div id="hyouka_val">3</div>
+                    </label>
+                    <br>
+                    <br>
+                    <label>ヒトコト:
+                        <textArea name="comment" rows="2" cols="40"></textArea>
+                    </label>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="submit" value="登録">
+<!--                    </fieldset>-->
+<!--                  </div>-->
+            </div>
         </div>
         
 <!--        検索入手した情報をinput用に格納する-->
@@ -171,7 +183,6 @@
         });
         
         function check() {
-
 //            var nick_name = $('#nick_name').val();
 //            var score = $('#score_saved').val();
 //            var title = $('#title').val();

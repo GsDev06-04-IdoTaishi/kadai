@@ -1,0 +1,16 @@
+main{
+}
+
+.contents{
+    display: flex;
+/*    margin: 1% 1% 1% 1%;*/
+    padding: 7% 1% 1% 1%;
+}
+
+.left_box{
+    width: 50%;
+}
+
+.right_box{
+    width:50%;
+}
