@@ -1,0 +1,187 @@
+/*全共通部分*/
+
+/*
+body{
+    font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container_all{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+*/
+
+/*
+main{
+    width: 87%;
+    height: 100%;
+    color: #4b4b4b;
+    
+    padding: 1% 1% 1% 1%;
+}
+*/
+
+/*ヘッダー*/
+/*
+.headeryoko{
+    width: 13%;
+    height: 100%;
+    background-color: #363636;
+    color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+.header-up{
+    width: 100%;
+    height: 15%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.header-down{
+    width: 100%;
+    height: 80%;
+    
+    padding-bottom: 5%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.header_menu{
+    width: 100%;
+    height: 10%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-top: solid 1px #101010;
+    border-bottom: solid 1px #101010;
+    
+    color: #f0f0f0;
+}
+
+.header-menu div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+*/
+
+/*コンテンツ部分*/
+
+.content_name{
+/*    height: 5%;*/
+    width: 100%;
+    
+    font-size: 24px;
+    text-align: center;
+}
+
+.content_name_underbar{
+/*    height: 0.5%;*/
+    width: 100%;
+    
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+
+.contents{
+/*    height: 79%;*/
+    width: 100%;
+    display: flex;
+    padding: 0 2% 0 2%;
+}
+
+.left_box{
+    width: 50%;
+/*    height: 100%;*/
+    padding: 1% 1% 1% 1%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_img{
+    height: 50%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_bg{
+    height: 100%;
+    width: 40%;
+    padding: 1% 1% 1% 1%;
+    background-color: #c9c9c9;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book_img{
+    height: 100%;
+    width: auto;
+}
+
+
+.right_box{
+    width: 50%;
+    padding: 1% 1% 1% 1%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.koumokus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.koumokumei{
+    font-weight: bold;
+}
+
+.btn_touroku{
+    
+    font-weight: bold;
+    padding: 10px 100px;
+    background-color: #248;
+    color: #fff;
+    border-style: none;
+    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 2px;
+
+}
+
+.btn_touroku:hover {
+    opacity: 0.8;
+}
