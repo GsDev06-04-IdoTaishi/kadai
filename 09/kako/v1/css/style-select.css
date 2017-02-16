@@ -1,0 +1,187 @@
+/*共通部分*/
+
+html{
+/*    height: 100%;*/
+    width: 100%;
+}
+
+body{
+    font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+    background-color: #f0f0f0;
+    color: #575757;
+/*    height: 100%;*/
+    width: 100%;
+}
+
+.container_all{
+/*    height: 100%;*/
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main{
+    width: 87%;
+/*    height: 100%;*/
+    
+    padding: 1% 1% 1% 1%;
+}
+
+/*ヘッダー*/
+
+.headeryoko{
+    width: 13%;
+    height: 100%;
+    background-color: #363636;
+    color: #686868;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    
+    border-right: solid 0.5px #2f2f2f;
+}
+
+
+.header-up{
+    width: 100%;
+    height: 15%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo{
+    height: auto;
+    width: 80%;
+}
+
+.header-down{
+    width: 100%;
+    height: 80%;
+    
+    padding-bottom: 5%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.header_menu{
+    width: 100%;
+    height: 10%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-top: solid 0.5px #2f2f2f;
+    border-bottom: solid 0.5px #2f2f2f;
+    
+    color: #686868;
+    font-size: 24px;
+}
+
+.header-menu div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.content_name{
+/*    height: 5%;*/
+    width: 100%;
+    
+    font-size: 24px;
+    text-align: center;
+}
+
+.content_name_underbar{
+/*    height: 0.5%;*/
+    width: 100%;
+    
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.ov_container{
+/*    background-color: #4a4a4a;*/
+    width: 100%;
+    height: 100%;
+}
+
+.status{
+    margin: 2% 2% 0 2%;
+}
+
+.chart_area{
+    display: flex;
+}
+
+.chart{
+    width: 30%;
+    margin-right: 3%;
+}
+
+.labels{
+    width: 70%;
+}
+
+.label_total{
+    text-align: center;
+    font-size: 36px;
+}
+
+.total_sassuu{
+    font-size: 54px;
+    margin: 0 10px 0 10px;
+}
+
+.labels_j{
+    display: flex;
+    height: 33.3%;
+}
+
+.label_j{
+    width: 33.3%;
+    margin: 1%;
+    text-align: center;
+}
+
+.jannru{
+    font-size: 20px;
+    border-bottom: dotted 1px #363636;
+    
+}
+
+.sassuu{
+    font-size: 30px;
+    margin: 0 5px 0 5px;
+}
+
+.mytr{color:#1abc9c;}
+.jidai{color:#f1c40f;}
+.sf{color:#2ecc71;}
+.non{color:#e67e22;}
+.lnov{color:#3498db;}
+.mc{color:#e74c3c;}
+.fc{color:#9b59b6;}
+.ad{color:#9b59b6;}
+.bl{color:#34495e;}
+
+.detail{
+    margin: 0 2% 0 2%;
+}
+
+.r_header{
+    width: 100%;
+}
+
+
+
+
+
+
+

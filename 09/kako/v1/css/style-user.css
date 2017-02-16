@@ -1,0 +1,57 @@
+/*コンテンツ部分*/
+
+.content_name{
+/*    height: 5%;*/
+    width: 100%;
+    
+    font-size: 24px;
+    text-align: center;
+}
+
+.content_name_underbar{
+/*    height: 0.5%;*/
+    width: 100%;
+    
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+
+.contents{
+/*    height: 79%;*/
+    width: 100%;
+    padding: 0 2% 0 2%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.koumokus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.koumokumei{
+    font-weight: bold;
+}
+
+.btn_touroku{
+    
+    font-weight: bold;
+    padding: 10px 100px;
+    background-color: #248;
+    color: #fff;
+    border-style: none;
+    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 2px;
+
+}
+
+.btn_touroku:hover {
+    opacity: 0.8;
+}

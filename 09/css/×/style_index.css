@@ -1,0 +1,49 @@
+/*全共通部分*/
+
+body{
+    font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+    background-color: white;
+}
+
+.container_all{
+    display: flex;
+}
+
+/*ヘッダー*/
+.header_yoko{
+    width: 20%;
+    background-color: #383838;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.header-container{
+    
+}
+
+.header-left{
+/*    float: left;*/
+}
+
+.header-right{
+/*    float: right;*/
+    margin-right: 1%;
+}
+
+/*コンテンツ部分*/
+
+.contents{
+/*    display: flex;*/
+/*    margin: 1% 1% 1% 1%;*/
+    padding: 7% 1% 1% 1%;
+}
+
+.left_box{
+/*    width: 50%;*/
+}
+
+.right_box{
+/*    width:50%;*/
+}

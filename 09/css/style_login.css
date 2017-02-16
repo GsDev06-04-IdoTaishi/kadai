@@ -1,0 +1,173 @@
+/*全共通*/
+
+html{
+    width: 100%;
+    height: 100%;/*ページによっては高さは変更いるかもなー。*/
+}
+
+body{
+    font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+    background-color: #f0f0f0;
+    color: #575757;
+    width: 100%;
+    height: 100%;
+    display: flex;
+/*    justify-content: flex-end;*/
+}
+
+
+/*共通部分_ページ構成*/
+
+/*左のヘッダー*/
+
+.header_left{
+    width: 13%;
+    height: 100%;
+    background-color: #363636;
+    color: #686868;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    
+    border-right: solid 0.5px #2f2f2f;
+}
+
+
+.header-up{
+    width: 100%;
+    height: 15%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo{
+    height: auto;
+    width: 80%;
+}
+
+.header-down{
+    width: 100%;
+    height: 80%;
+    
+    padding-bottom: 5%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.header_menu{
+    width: 100%;
+    height: 10%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-top: solid 0.5px #2f2f2f;
+    border-bottom: solid 0.5px #2f2f2f;
+    
+    color: #686868;
+    font-size: 24px;
+}
+
+.header-menu div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/*メイン*/
+
+main{
+    width: 100%;
+    height: 100%;
+    padding: 1% 1% 1% 1%;
+}
+
+/*右のヘッダー*/
+
+.header_right{
+    width: 13%;
+    height: 100%;
+    background-color: #363636;
+    color: #686868;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    
+    border-left: solid 0.5px #2f2f2f;
+}
+
+/*共通部分_ページ構成の終了*/
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 1% 1% 1%;
+}
+
+.container_login{
+    height: 50%;
+    width: 50%;
+    padding: 1% 1% 1% 1%;
+    
+    display: flex;
+    flex-direction: column;
+/*    justify-content: center;*/
+    align-items: center;
+    
+/*    background-color: aqua;*/
+}
+
+.title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title_ub{
+    margin-bottom: 2%;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.koumoku_login{
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.nyuuryoku_login{
+    margin-bottom: 10%;
+}
+
+.btn_login{
+    
+    font-weight: bold;
+    padding: 10px 100px;
+    background-color: #248;
+    color: #fff;
+    border-style: none;
+    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 2px;
+    
+    margin-top: 10px;
+
+}
+
+.btn_login:hover {
+    opacity: 0.8;
+}
